@@ -22,7 +22,7 @@ const Navbar = () => {
   const showButton = () => {
     window.innerWidth <= 960 ? setButton(false) : setButton(true);
   };
-
+  const closeMobileMenu = () => setClick(false);
   useEffect(() => {
     showButton();
   }, []);
@@ -33,7 +33,7 @@ const Navbar = () => {
       <IconContext.Provider value={{ color: "#fff" }}>
         <Nav>
           <NavbarContainer>
-            <NavLogo to="/">
+            <NavLogo to="/" onClick={closeMobileMenu}>
               <NavIcon />
               ULTRA
             </NavLogo>
@@ -45,10 +45,10 @@ const Navbar = () => {
                 <NavLinks to="/">Home</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/services">Services</NavLinks>
+                <NavLinks to="/service">Services</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/products">Products</NavLinks>
+                <NavLinks to="/product">Products</NavLinks>
               </NavItem>
               <NavItemBtn>
                 {button ? (
