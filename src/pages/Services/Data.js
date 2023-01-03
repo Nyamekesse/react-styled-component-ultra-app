@@ -11,7 +11,7 @@ export const homeObjFour = {
   primary: true,
   lightTextDesc: true,
   headline: "lead generation specialist for online business",
-  buttonLabel: "get started",
+  buttonLabel: "Get started",
   start: "true",
   alt: "Image",
   img: image4,

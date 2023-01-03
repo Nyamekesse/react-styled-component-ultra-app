@@ -11,7 +11,7 @@ export const homeObjThree = {
   primary: true,
   lightTextDesc: true,
   headline: "lead generation specialist for online business",
-  buttonLabel: "get started",
+  buttonLabel: "Get started",
   start: "",
   alt: "Image",
   img: image3,
